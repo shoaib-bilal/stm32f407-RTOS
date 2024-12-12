@@ -1,0 +1,21 @@
+/*
+ * led_effect.c
+ *
+ *  Created on: 07-Dec-2024
+ *      Author: shoai
+ */
+
+
+#include"main.h"
+
+void led_effect_stop(void)
+{
+
+}
+void led_effect(int n)
+{
+	led_effect_stop();
+	for(int i=0; i<4; i++)
+		xTimerStart(handle_led_timer[i],pdMS_TO_TICKS(500) );
+}
+

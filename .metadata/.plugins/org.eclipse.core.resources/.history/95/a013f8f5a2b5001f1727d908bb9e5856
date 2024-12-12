@@ -1,0 +1,27 @@
+/*
+ * task_handler.c
+ *
+ *  Created on: Dec 9, 2024
+ *      Author: shoai
+ */
+
+void menu_handler(void *parameters)
+{
+
+}
+void cmd_handler(void *parameters)
+{
+
+}
+void led_handler(void *parameters)
+{
+
+}
+void rtc_handler(void *parameters)
+{
+
+}
+void print_handler(void *parameters)
+{
+
+}

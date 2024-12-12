@@ -1,0 +1,50 @@
+/*
+ * led_handler.c
+ *
+ *  Created on: Dec 9, 2024
+ *      Author: shoai
+ */
+#include"main.h"
+
+
+void led_effect_stop()
+{
+	for(i=0;i<4;i++)
+		xTimerStop(led_timer_handle[i],portMAX_DELAY);
+}
+
+void led_effect(int n)
+{
+	led_effect_stop();
+	xTimerStart(led_timer_handle[i],portMAX_DELAY);
+}
+
+void LED_effect1(void)
+{
+	static int flag=1;
+
+	flag^=1 ? turn_on_all_leds() : turn_off_all_leds();
+
+}
+
+void LED_effect2(void)
+{
+	static int flag=1;
+	flag^=1 ? turn_on_even_leds() : turn_off_even_leds();
+
+}
+
+void LED_effect3(void)
+{
+
+}
+
+void LED_effect4(void)
+{
+
+}
+
+void led_control(int value)
+{
+
+}

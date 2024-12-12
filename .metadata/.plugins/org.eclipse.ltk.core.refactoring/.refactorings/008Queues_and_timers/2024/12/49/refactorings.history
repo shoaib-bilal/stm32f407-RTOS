@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;008Queues_and_timers/Core/Src/handler.c&apos; to &apos;task_handler.c&apos;" description="Rename resource &apos;handler.c&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="Core/Src/handler.c" name="task_handler.c" stamp="1733279543111" updateReferences="true"/>
+</session>

@@ -1,0 +1,75 @@
+/*
+ * task_handler.c
+ *
+ *  Created on: Dec 9, 2024
+ *      Author: shoai
+ */
+
+#include"main.h"
+
+void process_command(command_t *cmd);
+void extract_command(command_t *cmd)
+
+void menu_handler(void *parameters)
+{
+	while(1)
+	{
+
+
+	}
+}
+void cmd_handler(void *parameters)
+{
+command_t cmd;
+
+BaseType_t ret;
+
+	while(1)
+	{
+		ret= xTaskNotifyWait(0,0,NULL,portMAX_DELAY);
+
+		if (ret == pdTRUE )
+		{
+		process_command(&cmd);
+		}
+	}
+}
+
+void process_command(command_t *cmd)
+{
+
+}
+
+void extract_command(command_t *cmd)
+{
+	uint32_t data;
+	xQueueReceive(q_data, &cmd, portMAX_DELAY);
+
+
+}
+
+void led_handler(void *parameters)
+{
+	while(1)
+	{
+
+
+	}
+
+}
+void rtc_handler(void *parameters)
+{
+	while(1)
+	{
+
+
+	}
+}
+void print_handler(void *parameters)
+{
+	while(1)
+	{
+
+
+	}
+}

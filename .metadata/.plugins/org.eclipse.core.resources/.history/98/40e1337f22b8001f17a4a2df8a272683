@@ -1,0 +1,23 @@
+/*
+ * led_handler.c
+ *
+ *  Created on: Dec 9, 2024
+ *      Author: shoai
+ */
+#include"main.h"
+
+void led_effect_callback(TimerHandle_t xTimer)
+{
+
+}
+
+void led_effect_stop()
+{
+
+}
+
+void led_effect(int n)
+{
+
+}
+
