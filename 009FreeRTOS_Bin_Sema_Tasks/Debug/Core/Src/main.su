@@ -1,0 +1,10 @@
+main.c:80:5:main	16	static
+main.c:152:6:SystemClock_Config	88	static
+main.c:197:13:MX_USART2_UART_Init	8	static
+main.c:230:13:MX_GPIO_Init	56	static
+main.c:365:13:vManagerTask	24	static,ignoring_inline_asm
+main.c:395:13:vEmployeeTask	24	static
+main.c:422:6:EmployeeDoWork	16	static
+main.c:429:6:print_msg	16	static
+main.c:445:6:HAL_TIM_PeriodElapsedCallback	16	static
+main.c:462:6:Error_Handler	4	static,ignoring_inline_asm

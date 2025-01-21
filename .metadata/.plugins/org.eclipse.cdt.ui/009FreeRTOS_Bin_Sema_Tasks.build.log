@@ -1,0 +1,24 @@
+10:03:31 **** Build of configuration Debug for project 009FreeRTOS_Bin_Sema_Tasks ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/FreeRTOS/include" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/config" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/OS" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/SEGGER" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:83:13: warning: unused variable 'status' [-Wunused-variable]
+   83 |  BaseType_t status;
+      |             ^~~~~~
+arm-none-eabi-gcc -o "009FreeRTOS_Bin_Sema_Tasks.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\shoaib data\workspace\RTOS_workspace\009FreeRTOS_Bin_Sema_Tasks\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="009FreeRTOS_Bin_Sema_Tasks.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 009FreeRTOS_Bin_Sema_Tasks.elf
+ 
+arm-none-eabi-size   009FreeRTOS_Bin_Sema_Tasks.elf 
+arm-none-eabi-objdump -h -S  009FreeRTOS_Bin_Sema_Tasks.elf  > "009FreeRTOS_Bin_Sema_Tasks.list"
+arm-none-eabi-objcopy  -O binary  009FreeRTOS_Bin_Sema_Tasks.elf  "009FreeRTOS_Bin_Sema_Tasks.bin"
+   text	   data	    bss	    dec	    hex	filename
+  30188	    128	  79232	 109548	  1abec	009FreeRTOS_Bin_Sema_Tasks.elf
+Finished building: default.size.stdout
+ 
+Finished building: 009FreeRTOS_Bin_Sema_Tasks.bin
+ 
+Finished building: 009FreeRTOS_Bin_Sema_Tasks.list
+ 
+
+10:03:39 Build Finished. 0 errors, 1 warnings. (took 8s.101ms)
+

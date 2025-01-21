@@ -1,24 +1,132 @@
-08:28:26 **** Incremental Build of configuration Debug for project 008A_Queues_n_timers ****
+11:00:05 **** Incremental Build of configuration Debug for project FreeRTOS_Mutex_API ****
 make -j8 all 
-arm-none-eabi-gcc "../Core/Src/task_handler.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/FreeRTOS/include" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/config" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/OS" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/SEGGER" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/task_handler.d" -MT"Core/Src/task_handler.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/task_handler.o"
-arm-none-eabi-gcc -o "008A_Queues_n_timers.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\shoaib data\workspace\RTOS_workspace\008A_Queues_n_timers\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="008A_Queues_n_timers.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 008A_Queues_n_timers.elf
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/FreeRTOS/include" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/config" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/OS" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/SEGGER" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "FreeRTOS_Mutex_API.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\shoaib data\workspace\RTOS_workspace\FreeRTOS_Mutex_API\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FreeRTOS_Mutex_API.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: FreeRTOS_Mutex_API.elf
  
-arm-none-eabi-size   008A_Queues_n_timers.elf 
-arm-none-eabi-objdump -h -S  008A_Queues_n_timers.elf  > "008A_Queues_n_timers.list"
-arm-none-eabi-objcopy  -O binary  008A_Queues_n_timers.elf  "008A_Queues_n_timers.bin"
+arm-none-eabi-size   FreeRTOS_Mutex_API.elf 
+arm-none-eabi-objdump -h -S  FreeRTOS_Mutex_API.elf  > "FreeRTOS_Mutex_API.list"
+arm-none-eabi-objcopy  -O binary  FreeRTOS_Mutex_API.elf  "FreeRTOS_Mutex_API.bin"
    text	   data	    bss	    dec	    hex	filename
-  28200	     40	  79024	 107264	  1a300	008A_Queues_n_timers.elf
+  26208	    128	  78976	 105312	  19b60	FreeRTOS_Mutex_API.elf
 Finished building: default.size.stdout
  
-Finished building: 008A_Queues_n_timers.bin
+Finished building: FreeRTOS_Mutex_API.bin
  
-Finished building: 008A_Queues_n_timers.list
+Finished building: FreeRTOS_Mutex_API.list
  
-08:28:36 **** Incremental Build of configuration Debug for project 008A_Queues_n_timers ****
+11:00:31 **** Incremental Build of configuration Debug for project FreeRTOS_Mutex_API ****
+make -j8 all 
+arm-none-eabi-size   FreeRTOS_Mutex_API.elf 
+   text	   data	    bss	    dec	    hex	filename
+  26208	    128	  78976	 105312	  19b60	FreeRTOS_Mutex_API.elf
+Finished building: default.size.stdout
+ 
+11:01:39 **** Incremental Build of configuration Debug for project FreeRTOS_Mutex_API ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/FreeRTOS/include" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/config" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/OS" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/SEGGER" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "FreeRTOS_Mutex_API.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\shoaib data\workspace\RTOS_workspace\FreeRTOS_Mutex_API\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FreeRTOS_Mutex_API.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: FreeRTOS_Mutex_API.elf
+ 
+arm-none-eabi-size   FreeRTOS_Mutex_API.elf 
+arm-none-eabi-objdump -h -S  FreeRTOS_Mutex_API.elf  > "FreeRTOS_Mutex_API.list"
+arm-none-eabi-objcopy  -O binary  FreeRTOS_Mutex_API.elf  "FreeRTOS_Mutex_API.bin"
+   text	   data	    bss	    dec	    hex	filename
+  26208	    128	  78976	 105312	  19b60	FreeRTOS_Mutex_API.elf
+Finished building: default.size.stdout
+ 
+Finished building: FreeRTOS_Mutex_API.bin
+ 
+Finished building: FreeRTOS_Mutex_API.list
+ 
+11:03:12 **** Incremental Build of configuration Debug for project FreeRTOS_Mutex_API ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/FreeRTOS/include" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/config" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/OS" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/SEGGER" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "FreeRTOS_Mutex_API.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\shoaib data\workspace\RTOS_workspace\FreeRTOS_Mutex_API\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FreeRTOS_Mutex_API.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: FreeRTOS_Mutex_API.elf
+ 
+arm-none-eabi-size   FreeRTOS_Mutex_API.elf 
+arm-none-eabi-objdump -h -S  FreeRTOS_Mutex_API.elf  > "FreeRTOS_Mutex_API.list"
+arm-none-eabi-objcopy  -O binary  FreeRTOS_Mutex_API.elf  "FreeRTOS_Mutex_API.bin"
+   text	   data	    bss	    dec	    hex	filename
+  25040	    128	  78976	 104144	  196d0	FreeRTOS_Mutex_API.elf
+Finished building: default.size.stdout
+ 
+Finished building: FreeRTOS_Mutex_API.bin
+ 
+Finished building: FreeRTOS_Mutex_API.list
+ 
+11:06:08 **** Incremental Build of configuration Debug for project FreeRTOS_Mutex_API ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/FreeRTOS/include" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/config" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/OS" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/SEGGER" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "FreeRTOS_Mutex_API.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\shoaib data\workspace\RTOS_workspace\FreeRTOS_Mutex_API\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FreeRTOS_Mutex_API.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: FreeRTOS_Mutex_API.elf
+ 
+arm-none-eabi-size   FreeRTOS_Mutex_API.elf 
+arm-none-eabi-objdump -h -S  FreeRTOS_Mutex_API.elf  > "FreeRTOS_Mutex_API.list"
+arm-none-eabi-objcopy  -O binary  FreeRTOS_Mutex_API.elf  "FreeRTOS_Mutex_API.bin"
+   text	   data	    bss	    dec	    hex	filename
+  25132	    128	  78976	 104236	  1972c	FreeRTOS_Mutex_API.elf
+Finished building: default.size.stdout
+ 
+Finished building: FreeRTOS_Mutex_API.bin
+ 
+Finished building: FreeRTOS_Mutex_API.list
+ 
+08:00:49 **** Build of configuration Debug for project 006LED_Btn_ISR ****
+make -j8 all 
+arm-none-eabi-size   006LED_Btn_ISR.elf 
+   text	   data	    bss	    dec	    hex	filename
+  32276	     36	  84644	 116956	  1c8dc	006LED_Btn_ISR.elf
+Finished building: default.size.stdout
+ 
+08:09:16 **** Build of configuration Debug for project 008Queues_and_timers ****
+make -j8 all 
+arm-none-eabi-size   008Queues_and_timers.elf 
+   text	   data	    bss	    dec	    hex	filename
+  28220	     40	  79024	 107284	  1a314	008Queues_and_timers.elf
+Finished building: default.size.stdout
+ 
+08:11:18 **** Build of configuration Debug for project 008A_Queues_n_timers ****
 make -j8 all 
 arm-none-eabi-size   008A_Queues_n_timers.elf 
    text	   data	    bss	    dec	    hex	filename
-  28200	     40	  79024	 107264	  1a300	008A_Queues_n_timers.elf
+  33836	    148	  79140	 113124	  1b9e4	008A_Queues_n_timers.elf
 Finished building: default.size.stdout
+ 
+19:58:28 **** Build of configuration Debug for project 003LED_Block_Tasks ****
+make -j8 all 
+arm-none-eabi-gcc "D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/config/SEGGER_SYSVIEW_Config_FreeRTOS.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/FreeRTOS/include" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/config" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/OS" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/SEGGER" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"common/ThirdParty/SEGGER/config/SEGGER_SYSVIEW_Config_FreeRTOS.d" -MT"common/ThirdParty/SEGGER/config/SEGGER_SYSVIEW_Config_FreeRTOS.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "common/ThirdParty/SEGGER/config/SEGGER_SYSVIEW_Config_FreeRTOS.o"
+arm-none-eabi-gcc "D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/SEGGER/SEGGER_SYSVIEW.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/FreeRTOS/include" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/config" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/OS" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/SEGGER" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"common/ThirdParty/SEGGER/SEGGER/SEGGER_SYSVIEW.d" -MT"common/ThirdParty/SEGGER/SEGGER/SEGGER_SYSVIEW.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "common/ThirdParty/SEGGER/SEGGER/SEGGER_SYSVIEW.o"
+arm-none-eabi-gcc "D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/Rec/segger_uart.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/FreeRTOS/include" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/config" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/OS" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/SEGGER" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"common/ThirdParty/SEGGER/Rec/segger_uart.d" -MT"common/ThirdParty/SEGGER/Rec/segger_uart.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "common/ThirdParty/SEGGER/Rec/segger_uart.o"
+arm-none-eabi-gcc "D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/OS/SEGGER_SYSVIEW_FreeRTOS.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/FreeRTOS/include" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/config" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/OS" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/SEGGER" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"common/ThirdParty/SEGGER/OS/SEGGER_SYSVIEW_FreeRTOS.d" -MT"common/ThirdParty/SEGGER/OS/SEGGER_SYSVIEW_FreeRTOS.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "common/ThirdParty/SEGGER/OS/SEGGER_SYSVIEW_FreeRTOS.o"
+arm-none-eabi-gcc "D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/FreeRTOS/portable/MemMang/heap_4.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/FreeRTOS/include" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/config" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/OS" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/SEGGER" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"common/ThirdParty/FreeRTOS/portable/MemMang/heap_4.d" -MT"common/ThirdParty/FreeRTOS/portable/MemMang/heap_4.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "common/ThirdParty/FreeRTOS/portable/MemMang/heap_4.o"
+arm-none-eabi-gcc "D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F/port.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/FreeRTOS/include" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/config" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/OS" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/SEGGER" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"common/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F/port.d" -MT"common/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F/port.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "common/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F/port.o"
+arm-none-eabi-gcc "D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/FreeRTOS/croutine.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/FreeRTOS/include" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/config" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/OS" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/SEGGER" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"common/ThirdParty/FreeRTOS/croutine.d" -MT"common/ThirdParty/FreeRTOS/croutine.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "common/ThirdParty/FreeRTOS/croutine.o"
+arm-none-eabi-gcc "D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/FreeRTOS/event_groups.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/FreeRTOS/include" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/config" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/OS" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/SEGGER" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"common/ThirdParty/FreeRTOS/event_groups.d" -MT"common/ThirdParty/FreeRTOS/event_groups.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "common/ThirdParty/FreeRTOS/event_groups.o"
+arm-none-eabi-gcc "D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/FreeRTOS/list.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/FreeRTOS/include" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/config" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/OS" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/SEGGER" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"common/ThirdParty/FreeRTOS/list.d" -MT"common/ThirdParty/FreeRTOS/list.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "common/ThirdParty/FreeRTOS/list.o"
+arm-none-eabi-gcc "D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/FreeRTOS/queue.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/FreeRTOS/include" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/config" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/OS" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/SEGGER" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"common/ThirdParty/FreeRTOS/queue.d" -MT"common/ThirdParty/FreeRTOS/queue.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "common/ThirdParty/FreeRTOS/queue.o"
+arm-none-eabi-gcc "D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/FreeRTOS/stream_buffer.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/FreeRTOS/include" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/config" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/OS" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/SEGGER" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"common/ThirdParty/FreeRTOS/stream_buffer.d" -MT"common/ThirdParty/FreeRTOS/stream_buffer.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "common/ThirdParty/FreeRTOS/stream_buffer.o"
+arm-none-eabi-gcc "D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/FreeRTOS/tasks.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/FreeRTOS/include" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/config" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/OS" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/SEGGER" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"common/ThirdParty/FreeRTOS/tasks.d" -MT"common/ThirdParty/FreeRTOS/tasks.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "common/ThirdParty/FreeRTOS/tasks.o"
+arm-none-eabi-gcc "D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/FreeRTOS/timers.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/FreeRTOS/include" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/config" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/OS" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/SEGGER" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"common/ThirdParty/FreeRTOS/timers.d" -MT"common/ThirdParty/FreeRTOS/timers.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "common/ThirdParty/FreeRTOS/timers.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/FreeRTOS/include" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/config" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/OS" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/SEGGER" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/stm32f4xx_hal_msp.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/FreeRTOS/include" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/config" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/OS" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/SEGGER" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32f4xx_hal_msp.d" -MT"Core/Src/stm32f4xx_hal_msp.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32f4xx_hal_msp.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:103:3: warning: implicit declaration of function 'SEGGER_UART_init'; did you mean 'SEGGER_UART_REC'? [-Wimplicit-function-declaration]
+  103 |   SEGGER_UART_init(500000);
+      |   ^~~~~~~~~~~~~~~~
+      |   SEGGER_UART_REC
+arm-none-eabi-gcc -o "003LED_Block_Tasks.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\shoaib data\workspace\RTOS_workspace\003LED_Block_Tasks\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="003LED_Block_Tasks.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 003LED_Block_Tasks.elf
+ 
+arm-none-eabi-size   003LED_Block_Tasks.elf 
+arm-none-eabi-objdump -h -S  003LED_Block_Tasks.elf  > "003LED_Block_Tasks.list"
+arm-none-eabi-objcopy  -O binary  003LED_Block_Tasks.elf  "003LED_Block_Tasks.bin"
+   text	   data	    bss	    dec	    hex	filename
+  30268	     36	  84628	 114932	  1c0f4	003LED_Block_Tasks.elf
+Finished building: default.size.stdout
+ 
+Finished building: 003LED_Block_Tasks.bin
+ 
+Finished building: 003LED_Block_Tasks.list
  

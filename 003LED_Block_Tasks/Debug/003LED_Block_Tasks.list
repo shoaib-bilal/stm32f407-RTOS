@@ -7,19 +7,19 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
   1 .text         00007324  08000190  08000190  00010190  2**4
                   CONTENTS, ALLOC, LOAD, READONLY, CODE
-  2 .rodata       00000190  080074b4  080074b4  000174b4  2**2
+  2 .rodata       00000188  080074b4  080074b4  000174b4  2**2
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
-  3 .ARM.extab    00000000  08007644  08007644  0002001c  2**0
+  3 .ARM.extab    00000000  0800763c  0800763c  0002001c  2**0
                   CONTENTS
-  4 .ARM          00000008  08007644  08007644  00017644  2**2
+  4 .ARM          00000008  0800763c  0800763c  0001763c  2**2
                   CONTENTS, ALLOC, LOAD, READONLY, DATA
-  5 .preinit_array 00000000  0800764c  0800764c  0002001c  2**0
+  5 .preinit_array 00000000  08007644  08007644  0002001c  2**0
                   CONTENTS, ALLOC, LOAD, DATA
-  6 .init_array   00000004  0800764c  0800764c  0001764c  2**2
+  6 .init_array   00000004  08007644  08007644  00017644  2**2
                   CONTENTS, ALLOC, LOAD, DATA
-  7 .fini_array   00000004  08007650  08007650  00017650  2**2
+  7 .fini_array   00000004  08007648  08007648  00017648  2**2
                   CONTENTS, ALLOC, LOAD, DATA
-  8 .data         0000001c  20000000  08007654  00020000  2**2
+  8 .data         0000001c  20000000  0800764c  00020000  2**2
                   CONTENTS, ALLOC, LOAD, DATA
   9 .ccmram       00000000  10000000  10000000  0002001c  2**0
                   CONTENTS
@@ -41,11 +41,11 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  18 .debug_line   000160e0  00000000  00000000  0006430d  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .debug_str    000d84d7  00000000  00000000  0007a3ed  2**0
+ 19 .debug_str    000d84d2  00000000  00000000  0007a3ed  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 20 .comment      00000053  00000000  00000000  001528c4  2**0
+ 20 .comment      00000053  00000000  00000000  001528bf  2**0
                   CONTENTS, READONLY
- 21 .debug_frame  000052f0  00000000  00000000  00152918  2**2
+ 21 .debug_frame  000052f0  00000000  00000000  00152914  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -1841,7 +1841,7 @@ LoopFillZerobss:
   ldr r1, =_edata
  8000c64:	2000001c 	.word	0x2000001c
   ldr r2, =_sidata
- 8000c68:	08007654 	.word	0x08007654
+ 8000c68:	0800764c 	.word	0x0800764c
   ldr r2, =_sbss
  8000c6c:	2000001c 	.word	0x2000001c
   ldr r4, =_ebss
@@ -4152,7 +4152,7 @@ HAL_StatusTypeDef HAL_RCC_ClockConfig(RCC_ClkInitTypeDef  *RCC_ClkInitStruct, ui
  800193e:	bf00      	nop
  8001940:	40023c00 	.word	0x40023c00
  8001944:	40023800 	.word	0x40023800
- 8001948:	08007604 	.word	0x08007604
+ 8001948:	080075fc 	.word	0x080075fc
  800194c:	20000000 	.word	0x20000000
  8001950:	20000004 	.word	0x20000004
 
@@ -4421,7 +4421,7 @@ uint32_t HAL_RCC_GetPCLK1Freq(void)
  8001b4c:	4618      	mov	r0, r3
  8001b4e:	bd80      	pop	{r7, pc}
  8001b50:	40023800 	.word	0x40023800
- 8001b54:	08007614 	.word	0x08007614
+ 8001b54:	0800760c 	.word	0x0800760c
 
 08001b58 <HAL_RCC_GetClockConfig>:
   * will be configured.
@@ -13875,7 +13875,7 @@ Done:
  8004efc:	bd80      	pop	{r7, pc}
  8004efe:	bf00      	nop
  8004f00:	20000014 	.word	0x20000014
- 8004f04:	08007624 	.word	0x08007624
+ 8004f04:	0800761c 	.word	0x0800761c
 
 08004f08 <SEGGER_UART_init>:
 
@@ -16600,7 +16600,7 @@ static void _PrintUnsigned(SEGGER_SYSVIEW_PRINTF_DESC * pBufferDesc, unsigned in
  8005e6a:	46bd      	mov	sp, r7
  8005e6c:	bd80      	pop	{r7, pc}
  8005e6e:	bf00      	nop
- 8005e70:	08007634 	.word	0x08007634
+ 8005e70:	0800762c 	.word	0x0800762c
 
 08005e74 <_PrintInt>:
 *    Base         Base of the value.
@@ -18147,7 +18147,7 @@ void SEGGER_SYSVIEW_Start(void) {
  800690c:	bd80      	pop	{r7, pc}
  800690e:	bf00      	nop
  8006910:	20014264 	.word	0x20014264
- 8006914:	08007628 	.word	0x08007628
+ 8006914:	08007620 	.word	0x08007620
  8006918:	20014294 	.word	0x20014294
 
 0800691c <SEGGER_SYSVIEW_Stop>:
@@ -19759,7 +19759,7 @@ static void _cbSendSystemDesc(void) {
  80073d4:	bf00      	nop
  80073d6:	bd80      	pop	{r7, pc}
  80073d8:	080075b0 	.word	0x080075b0
- 80073dc:	080075f4 	.word	0x080075f4
+ 80073dc:	080075ec 	.word	0x080075ec
 
 080073e0 <SEGGER_SYSVIEW_Conf>:
 *
@@ -19787,7 +19787,7 @@ void SEGGER_SYSVIEW_Conf(void) {
  80073fe:	bd80      	pop	{r7, pc}
  8007400:	20000000 	.word	0x20000000
  8007404:	080073c5 	.word	0x080073c5
- 8007408:	0800761c 	.word	0x0800761c
+ 8007408:	08007614 	.word	0x08007614
 
 0800740c <__libc_init_array>:
  800740c:	b570      	push	{r4, r5, r6, lr}
@@ -19815,10 +19815,10 @@ void SEGGER_SYSVIEW_Conf(void) {
  800743e:	4798      	blx	r3
  8007440:	3601      	adds	r6, #1
  8007442:	e7f2      	b.n	800742a <__libc_init_array+0x1e>
- 8007444:	0800764c 	.word	0x0800764c
- 8007448:	0800764c 	.word	0x0800764c
- 800744c:	0800764c 	.word	0x0800764c
- 8007450:	08007650 	.word	0x08007650
+ 8007444:	08007644 	.word	0x08007644
+ 8007448:	08007644 	.word	0x08007644
+ 800744c:	08007644 	.word	0x08007644
+ 8007450:	08007648 	.word	0x08007648
 
 08007454 <memcmp>:
  8007454:	b530      	push	{r4, r5, lr}

@@ -31,6 +31,8 @@ extern "C" {
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include<string.h>
+#include<stdio.h>
 #include"FreeRTOS.h"
 #include"task.h"
 #include"queue.h"
@@ -53,7 +55,7 @@ sMainmenu=0,
 sLedEffect,
 sRtcMenu,
 sRtcTimeConfig,
-SRtcDataConfig,
+SRtcDateConfig,
 sRtcReport,
 }state_t;
 
@@ -74,6 +76,7 @@ extern TaskHandle_t print_handle;
 extern TimerHandle_t led_timer_handle[4];
 
 extern UART_HandleTypeDef huart2;
+extern RTC_HandleTypeDef hrtc;
 
 /* USER CODE END EC */
 
@@ -86,6 +89,11 @@ extern UART_HandleTypeDef huart2;
 void Error_Handler(void);
 
 /* USER CODE BEGIN EFP */
+void show_time_date();
+void rtc_configure_time(RTC_TimeTypeDef *time);
+void rtc_configure_date(RTC_DateTypeDef *date);
+int validate_rtc_information(RTC_TimeTypeDef *time,RTC_DateTypeDef *date);
+
 void led_effect_stop(void);
 void led_effect(int n);
 

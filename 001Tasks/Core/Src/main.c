@@ -103,7 +103,7 @@ int main(void)
 
   SEGGER_SYSVIEW_Conf();
 
-  SEGGER_SYSVIEW_Start();  //this line is these is segger_uart.c under segger->config->Rec
+ // SEGGER_SYSVIEW_Start();  //this line is these is segger_uart.c under segger->config->Rec
 
   status=xTaskCreate(task1_handler, "Task-1", 200, "Hello world from Task-1", 2, &task1_handle);
 

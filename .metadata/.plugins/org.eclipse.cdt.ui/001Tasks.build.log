@@ -1,4 +1,4 @@
-10:44:40 **** Incremental Build of configuration Debug for project 001Tasks ****
+20:37:48 **** Incremental Build of configuration Debug for project 001Tasks ****
 make -j8 all 
 arm-none-eabi-gcc "../ThirdParty/SEGGER/config/SEGGER_SYSVIEW_Config_FreeRTOS.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I"D:/shoaib data/workspace/RTOS_workspace/001Tasks/ThirdParty/SEGGER/config" -I"D:/shoaib data/workspace/RTOS_workspace/001Tasks/ThirdParty/SEGGER/OS" -I"D:/shoaib data/workspace/RTOS_workspace/001Tasks/ThirdParty/SEGGER/SEGGER" -I"D:/shoaib data/workspace/RTOS_workspace/001Tasks/ThirdParty/FreeRTOS" -I"D:/shoaib data/workspace/RTOS_workspace/001Tasks/ThirdParty/FreeRTOS/include" -I"D:/shoaib data/workspace/RTOS_workspace/001Tasks/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"ThirdParty/SEGGER/config/SEGGER_SYSVIEW_Config_FreeRTOS.d" -MT"ThirdParty/SEGGER/config/SEGGER_SYSVIEW_Config_FreeRTOS.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "ThirdParty/SEGGER/config/SEGGER_SYSVIEW_Config_FreeRTOS.o"
 arm-none-eabi-gcc "../ThirdParty/SEGGER/SEGGER/SEGGER_SYSVIEW.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I"D:/shoaib data/workspace/RTOS_workspace/001Tasks/ThirdParty/SEGGER/config" -I"D:/shoaib data/workspace/RTOS_workspace/001Tasks/ThirdParty/SEGGER/OS" -I"D:/shoaib data/workspace/RTOS_workspace/001Tasks/ThirdParty/SEGGER/SEGGER" -I"D:/shoaib data/workspace/RTOS_workspace/001Tasks/ThirdParty/FreeRTOS" -I"D:/shoaib data/workspace/RTOS_workspace/001Tasks/ThirdParty/FreeRTOS/include" -I"D:/shoaib data/workspace/RTOS_workspace/001Tasks/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"ThirdParty/SEGGER/SEGGER/SEGGER_SYSVIEW.d" -MT"ThirdParty/SEGGER/SEGGER/SEGGER_SYSVIEW.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "ThirdParty/SEGGER/SEGGER/SEGGER_SYSVIEW.o"
@@ -22,7 +22,7 @@ arm-none-eabi-size   001Tasks.elf
 arm-none-eabi-objdump -h -S  001Tasks.elf  > "001Tasks.list"
 arm-none-eabi-objcopy  -O binary  001Tasks.elf  "001Tasks.bin"
    text	   data	    bss	    dec	    hex	filename
-  30112	    128	  84648	 114888	  1c0c8	001Tasks.elf
+  30288	    128	  84656	 115072	  1c180	001Tasks.elf
 Finished building: default.size.stdout
  
 Finished building: 001Tasks.bin
@@ -30,5 +30,5 @@ Finished building: 001Tasks.bin
 Finished building: 001Tasks.list
  
 
-10:44:43 Build Finished. 0 errors, 0 warnings. (took 2s.454ms)
+20:37:51 Build Finished. 0 errors, 0 warnings. (took 3s.573ms)
 

@@ -131,9 +131,9 @@ int main(void)
 
   configASSERT(status==pdPASS);
 
- // status= xTaskCreate(rtc_handler, "rtc-task", 250, NULL, 2, &rtc_handle);
+  status= xTaskCreate(rtc_handler, "rtc-task", 250, NULL, 2, &rtc_handle);
 
-//  configASSERT(status==pdPASS);
+  configASSERT(status==pdPASS);
 
   status= xTaskCreate(print_handler, "print-task", 250, NULL, 2, &print_handle);
 
@@ -427,6 +427,7 @@ void HAL_UART_RxCpltCallback(UART_HandleTypeDef *huart)
 {
 
 	uint8_t dummy;
+	for(uint32_t i=0;i<4000;i++);
 
 	if (!xQueueIsQueueFullFromISR(q_data))
 	{
@@ -475,6 +476,7 @@ void led_effect_callback(TimerHandle_t xTimer)
 
 
 }
+
 
 /* USER CODE END 4 */
 

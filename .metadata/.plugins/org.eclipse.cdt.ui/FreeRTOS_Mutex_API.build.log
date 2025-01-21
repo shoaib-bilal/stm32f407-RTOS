@@ -1,0 +1,20 @@
+11:06:08 **** Incremental Build of configuration Debug for project FreeRTOS_Mutex_API ****
+make -j8 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F407xx -c -I../Core/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc -I../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I../Drivers/CMSIS/Include -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/FreeRTOS/include" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/FreeRTOS/portable/GCC/ARM_CM4F" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/config" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/OS" -I"D:/shoaib data/workspace/RTOS_workspace/common/ThirdParty/SEGGER/SEGGER" -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "FreeRTOS_Mutex_API.elf" @"objects.list"   -mcpu=cortex-m4 -T"D:\shoaib data\workspace\RTOS_workspace\FreeRTOS_Mutex_API\STM32F407VGTX_FLASH.ld" --specs=nosys.specs -Wl,-Map="FreeRTOS_Mutex_API.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: FreeRTOS_Mutex_API.elf
+ 
+arm-none-eabi-size   FreeRTOS_Mutex_API.elf 
+arm-none-eabi-objdump -h -S  FreeRTOS_Mutex_API.elf  > "FreeRTOS_Mutex_API.list"
+arm-none-eabi-objcopy  -O binary  FreeRTOS_Mutex_API.elf  "FreeRTOS_Mutex_API.bin"
+   text	   data	    bss	    dec	    hex	filename
+  25132	    128	  78976	 104236	  1972c	FreeRTOS_Mutex_API.elf
+Finished building: default.size.stdout
+ 
+Finished building: FreeRTOS_Mutex_API.bin
+ 
+Finished building: FreeRTOS_Mutex_API.list
+ 
+
+11:06:09 Build Finished. 0 errors, 0 warnings. (took 1s.967ms)
+
